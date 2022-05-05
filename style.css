@@ -1,0 +1,56 @@
+#score{ text-align: center;}
+
+h1
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#game
+{
+    width: 600px;
+    height: 300px;
+    border: 3px solid greenyellow;
+    margin: auto;
+    background-image: url("./background.jpg");
+    background-size: cover;
+}
+
+#one
+{
+    width: 100px;
+    height: 100px;
+    top: 220px;
+    position: relative;
+    background-image: url("./geng.png");
+    background-size: cover;
+}
+
+#two
+{
+    width: 50px;
+    height: 50px;
+    top: 150px;
+    left: 550px;
+    position: relative;
+    background-image: url("./ball.png");
+    background-size: cover;
+    animation: two-block 1.3s infinite linear;
+}
+
+.jump
+{
+    animation: jump 0.4s linear;
+}
+
+@keyframes jump{
+    0%{top:225px;}
+    50%{top:80px;}
+    75%{top:80px;}
+    100%{top:225px;}
+}
+
+@keyframes two-block{
+    0%{left:600px;}
+    100%{left:-20px;}
+  
+}
